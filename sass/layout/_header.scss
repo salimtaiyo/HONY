@@ -1,0 +1,71 @@
+//the bgimg of the first page
+
+.container__firstPage {
+    background-image: url("../img/fractal.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 2rem;
+    position: relative;
+
+    &--menu {
+        display: flex;
+        justify-content: space-between;
+
+        &--scrollBar ul li {
+            color: $white;
+            display: inline-block;
+            list-style-type: none;
+            padding: 2rem;
+            text-shadow: 0 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05); //designhack.net
+        }
+    }
+}
+
+//title box 
+
+.title h1 {
+    animation: headerOne 2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+//modal 
+#openModal {
+    position: absolute;
+    bottom: 10rem;
+    left: 48%;
+    padding: 2rem;
+    border: 3px solid $pureWhite;
+    background-color: transparent;
+    color: $pureWhite;
+    transform: translateY(-2px);
+}
+
+.modal {
+    width: 20rem;
+    height: 10rem;
+    background-color: RGBA(17, 115, 206, .4);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    padding: 10px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+
+}
+
+#openModal:hover {
+    transform: translateY(0);
+    box-shadow: 0 2px 2px rgba(252, 249, 249, 0.5);
+}
+
+.modal span {
+    display: absolute;
+    top: 0;
+    right: 0;
+    color: antiquewhite;
+}

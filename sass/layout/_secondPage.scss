@@ -1,0 +1,49 @@
+.container__two {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    &--box {
+        height: 200px;
+        width: 200px;
+        border-bottom: 2px solid rgba(0,0,0,.3);
+        padding:20px;
+        margin-top: 5px;
+        text-shadow: 2px 8px 6px 
+        rgba(99, 87, 87, 0.329),
+         0 -5px 35px 
+         rgba(255, 255, 255, 0.555); //designshacks.net
+    }
+
+    &--img {
+        margin-top: 4rem;
+        height: 550px;
+        width: 500px;
+        grid-column: 2/3;
+        grid-row: 1/span-1;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        transition: 1s ease-in-out;
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.img {
+
+    height: 100%;
+    width: 100%;
+    transition: 1s ease-in-out;
+
+}
+

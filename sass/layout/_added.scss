@@ -1,0 +1,21 @@
+.added {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba(162, 163, 151, 0.8), rgba(135, 158, 145, 0.8)), url("../img/invi.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 40rem 10rem;
+    grid-gap: 1rem;
+    padding: 5rem;
+
+    &__para {
+        }
+
+}
+
+.readseries {
+    box-shadow: inset 0 0 10px #000000; //desingerhacks.net
+    padding: 2rem;
+}

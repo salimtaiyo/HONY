@@ -1,0 +1,107 @@
+
+.fourth--page{
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.recent{
+    padding: 2rem;
+}
+
+.container__stories{
+    width: 35rem;
+    height: 25rem;
+    display: inline-block;
+    position: relative;
+    margin: 3rem;
+    overflow: hidden;
+    
+}
+.modal__img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.container__overlay{
+    position: absolute;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    background: rgba(76, 136, 177, 0.5); 
+}
+
+.fromLeft{
+    height: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.container__overlay--content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.2rem;
+}
+
+.container__stories:hover .container__overlay{
+    opacity: 1;
+}
+
+.container__stories:hover .fromLeft{
+    height: 100%;
+}
+
+.container__stories:hover .modal__img{
+    transform: scale(1.1);
+}
+
+.modal__stories {
+    height: 80vh;
+    position: absolute;
+    background-color: azure;
+    top: 10%;
+    left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.modal__stories--two{
+    height: 80vh;
+    position: absolute;
+    background-color: azure;
+    top: 10%;
+    left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.modal__stories--three{
+    height: 80vh;
+    position: absolute;
+    background-color: azure;
+    top: 10%;
+    left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.modal__stories--four{
+    height: 80vh;
+    position: absolute;
+    background-color: azure;
+    top: 10%;
+    left: 0;
+    padding: 5rem;
+    font-size: 2rem;
+    display: none;
+}

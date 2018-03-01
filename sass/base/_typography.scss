@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+//fonts for second page
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+//global reset for the padding and margin
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size : 62.5%;
+    font-family : 'Lato',
+    sans-serif;
+
+}
+    .title h1 {
+        // font-family: 'Nanum Pen Script', cursive;
+        font-family: 'Montserrat',
+        sans-serif;
+        font-size: 4 rem;
+        color: $white;
+        transform: translateY(-1 px);
+        transition: all .5 s ease-in-out;
+        text-align: center;
+        text-shadow: 0 px 15 px 5 px rgba(0, 0, 0, 0.1),
+        10 px 20 px 5 px rgba(0, 0, 0, 0.05),
+        -10 px 20 px 5 px rgba(0, 0, 0, 0.05); //designhack.net
+
+        &:hover {
+            transform : translateY(0);
+            text-shadow : 0 px 7 px 7 px rgba(0, 0, 0, 0.5),
+            5 px 10 px 2 px rgba(0, 0, 0, 0.07),
+            -5 px 10 px 2 px rgba(0, 0, 0, 0.07); //designhack.net
+
+        }
+    }
+    .container__firstPage--menu--scrollBar {
+        font-size : 1.5rem;
+    }
+
+    // global reset for anchor tags
+    a {
+        text-decoration : none;
+        color : white;
+    }
+
+    //page two
+    .container__two {
+        font-size : 1.5rem;
+        &--box {
+            font-family : 'Poiret One',
+            cursive;
+        }
+    }
+
+    //page three
+    .container__three {
+        color : white;
+
+        &--one {
+            // background-color: aquamarine;
+            font-size : 3rem;
+            text-align : center;
+            margin-top : 3rem;
+
+        } &--two {
+            padding : 3rem;
+            font-size : 1.5rem;
+            line-height : 3rem;
+            // background-color: red;
+        } &--three {
+            padding : 3rem;
+            font-size : 1.5rem;
+            line-height : 3rem;
+            // background-color: bisque;
+        }
+
+    }
+
+    //page 4 stories
+    .container__stories--header {
+        text-align : center;
+        font-size : 1.5rem;
+    }
+    .recent{
+        font-size: 3rem;
+    }
+
+    //added content
+    .added {
+        text-align : center;
+        color : rgb(129, 5, 42);
+    }
+    .added h1 {
+        font-size: 3rem;
+        padding-top: 1rem;
+        margin-top: 5rem;
+    }
+    .added h4 {
+        font-size: 2rem;
+        word-break: break-all;
+
+    }
+    .added p {
+        margin-top: 20rem;
+        font-size: 2rem;
+        box-shadow: 2px 2px 2px 2px rgba(207, 193, 193, 0.9);
+    }
+
+    #playPause {
+        font-size : 2rem;
+
+        &:hover {
+            cursor : pointer;
+        }
+    }
